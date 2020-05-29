@@ -12,7 +12,6 @@ const minJumps = (arr) => {
     return 0;
   }
   while (pointer < arr.length) {
-    debugger;
     if (value + pointer >= arr.length - 1) {
       return ++jumps;
     }
@@ -31,8 +30,10 @@ const minJumps = (arr) => {
   return jumps;
 };
 
+const test2 = [6, 3, 2, 1];
 const test3 = [2, 4, 1, 1, 2, 3, 7, 1, 1, 3];
 const test4 = [2, 3, 1, 1, 1, 1, 3, 7, 2, 4];
+console.log(minJumps(test2));
 console.log(minJumps(test3));
 console.log(minJumps(test4));
 
